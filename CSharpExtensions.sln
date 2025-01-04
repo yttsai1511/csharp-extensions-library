@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpExtensionsLibrary", "CSharpExtensionsLibrary.csproj", "{5A194F08-0B64-4178-8635-3254663C7489}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpExtensions", "CSharpExtensions.csproj", "{5A194F08-0B64-4178-8635-3254663C7489}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
