@@ -127,7 +127,7 @@ numbers.ForEach(num => results.Add(num * 2)); // 將每個數字乘以 2 並加�
 
 1. **Register**
 ```csharp
-public static TSource Register<TSource>(this TSource source, TSource toRegister, bool isEnable)
+public static TSource Register<TSource>(this TSource source, TSource toRegister, bool isEnable) where TSource : Delegate
 ```
 ```csharp
 Action<int> action = x => results.Add(x * 2);
@@ -192,7 +192,7 @@ public static void SetPropertyValue(this object obj, string name, object value)
 ```csharp
 class Sample
 {
-    public string Name { get; set; }
+    public string Name { get; private set; }
 }
 
 var sample = new Sample();
@@ -203,7 +203,7 @@ sample.SetPropertyValue("Name", "New Value"); // 設定屬性值為 "New Value"
 
 1. **GetName**
 ```csharp
-public static string GetName<TEnum>(this TEnum source)
+public static string GetName<TEnum>(this TEnum source) where TEnum : Enum
 ```
 ```csharp
 enum Colors { Red, Green, Blue }
